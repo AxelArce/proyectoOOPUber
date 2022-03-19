@@ -1,7 +1,17 @@
-function Account() {
-    this.id;
-    this.name;
-    this.document;
-    this.email;
-    this.password;
+class Account {
+
+    constructor(name, document, email, password) {
+        this.id;
+        this.name = name;
+        this.document = document;
+        this.email = email;
+        this.password = password;
+    }
+
+    printDataAccount() {
+        console.log("The name: " + this.name);
+        console.log("The document: " + this.document);
+        console.log("The password: " + this.password);
+    }
+
 }
